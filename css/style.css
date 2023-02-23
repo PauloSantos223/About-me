@@ -28,3 +28,11 @@ header {
 #bio {
     text-align:left;
 }
+
+#hobbiestitle {
+    color: firebrick;
+    text-align: center;
+    padding:10px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:30pt;
+}
