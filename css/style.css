@@ -27,6 +27,14 @@ header {
     box-shadow: 3pt;
 }
 
+#photogallery {
+    box-shadow: black;
+    box-shadow: 1pt;
+    text-align: center;
+    background-color: beige;
+}
+
+
 #hero img {
     width:300px;
 }
