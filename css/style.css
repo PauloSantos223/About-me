@@ -21,6 +21,12 @@ header {
     padding:10px;
 }
 
+#hobbies {
+    color: darkseagreen;
+    box-shadow: rgb(24, 108, 80);
+    box-shadow: 3pt;
+}
+
 #hero img {
     width:300px;
 }
