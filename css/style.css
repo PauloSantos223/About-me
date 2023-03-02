@@ -25,7 +25,19 @@ header {
     color: darkseagreen;
     box-shadow: rgb(24, 108, 80);
     box-shadow: 3pt;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
+
+
+#hobbies h2 {
+
+    margin: .5ex 0px;
+
+
+}
+
 
 #photogallery {
     box-shadow: black;
@@ -57,3 +69,71 @@ header {
     font-family:"Roboto Condensed", sans-serif;
     font-size:30pt;
 }
+
+#lit p:first-child::first-letter {
+
+    color: black;
+    font-size: 230%;
+    padding: 0.5ex;
+    font-weight:bold;
+    background-color: ghostwhite;
+    text-shadow:2px 3px;
+    box-shadow:3px 3px;
+
+}
+
+#litdiv {
+    max-width:100%;
+    columns: 30rem;
+    text-align:justify;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media Queries */
+
+    @media screen and (min-width: 768px) {
+
+        #photogallery {
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+        }
+
+        #photogallery figcaption {
+
+        }
+
+    @media screen and (min-width:1200px) {
+
+        #photogallery {
+            display:grid;
+            grid-template-columns:1fr 1fr 1fr;
+        }
+        #photogallery hr {
+            display:none;
+        }
+        #photogallery h2 {
+            grid-column:1/-1;
+        }
+        #photogallery {
+            display:block;
+        }
+    }
+
+
+    }
+
+
+
+
+    
+
