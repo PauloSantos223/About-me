@@ -7,6 +7,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family:"Roboto Condensed", sans-serif;
     font-size:40pt;
+    display: inline;
 }
 
 header {
@@ -88,7 +89,30 @@ header {
     text-align:justify;
 }
 
+#videoheading {
+    text-align: center;
+}
 
+#myVideo {
+    width: 100%;
+    background-color:blanchedalmond;
+    border-color:black;
+    border-style: inset double none;
+    border-radius: 10%;
+    box-shadow:bisque 5pt 5pt 5pt;
+    position: relative;
+    padding-bottom:56.5%;
+}
+
+#myVideo iframe {
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:inherit;
+    box-shadow:beige 3pt 3pt 3pt;
+    border-radius: 25px;
+    
+ }
 
 
 
@@ -109,8 +133,14 @@ header {
         }
 
         #photogallery figcaption {
-
+            display:grid;
+            grid-template-columns: 2fr 1fr;
         }
+        #myVideo {
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+        }
+    }
 
     @media screen and (min-width:1200px) {
 
@@ -127,9 +157,15 @@ header {
         #photogallery {
             display:block;
         }
-    }
+        #myVideo {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr;
 
+        }
+        #myVideo iframe {
+            display:flex;
 
+        }
     }
 
 
