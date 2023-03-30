@@ -128,10 +128,11 @@ header {
     border:2px solid chocolate;
     padding:1em;
     border-radius:1em;
+    border-style: groove;
  }
 
  #contact legend {
-    background-color:chocolate;
+    background-color:cornflowerblue;
     color:white;
     padding:1ex;
     border-bottom-right-radius:1ex;
@@ -142,6 +143,8 @@ header {
     display:grid;
     margin-top:1ex;
     margin-bottom:1ex;
+    color: black;
+    background-color: ghostwhite;
  }
 
  #contact label {
@@ -149,9 +152,18 @@ header {
  }
 
  #contact fieldset fieldset {
-     grid-template-columns: 30px auto;
+    grid-template-columns: 30px auto;
+    color: black;
+    background-color:bisque;
+    box-shadow: bisque 5px 3px 5px;
  }
 
+ #submitbutton {
+    background-color: ghostwhite;
+    border-style: ridge;
+    background-image: url(/img/starsolid.gif);
+    background-attachment: fixed;
+ }
 
 
 
