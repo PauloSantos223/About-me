@@ -115,11 +115,42 @@ header {
    
  }
 
+/* Contact Form */
 
+ #contact {
+    max-width: 400px;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:75px;
+ }
 
+ #contact fieldset {
+    border:2px solid chocolate;
+    padding:1em;
+    border-radius:1em;
+ }
 
+ #contact legend {
+    background-color:chocolate;
+    color:white;
+    padding:1ex;
+    border-bottom-right-radius:1ex;
+    border-top-left-radius:1ex;   
+ }
 
+ #contact fieldset {
+    display:grid;
+    margin-top:1ex;
+    margin-bottom:1ex;
+ }
 
+ #contact label {
+    margin:1ex;
+ }
+
+ #contact fieldset fieldset {
+     grid-template-columns: 30px auto;
+ }
 
 
 
