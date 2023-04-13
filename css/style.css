@@ -3,13 +3,13 @@ body {
     background-color: #9fc7fc;
     color:#187452;
 }
-
+/*
 h1, h2, h3, h4, h5, h6 {
     font-family:"Roboto Condensed", sans-serif;
     font-size:40pt;
     display: inline;
 }
-
+*/
 header {
     text-align:center;
 }
@@ -55,10 +55,10 @@ header {
 
 }
 
-#hero img {
+/*#hero img {
     width:300px;
 }
-
+*/
 #bio {
     text-align:left;
 }
