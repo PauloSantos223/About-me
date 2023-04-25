@@ -26,6 +26,10 @@ header {
     padding:10px;
 }
 
+#hero img {
+    max-width:100%;
+}
+
 #hobbies {
     color: darkseagreen;
     box-shadow: rgb(24, 108, 80);
@@ -49,6 +53,11 @@ header {
     box-shadow: 1pt;
     text-align: center;
     background-color: beige;
+    
+}
+
+#photogallery img {
+    max-width:100%;
 }
 
 #article {
@@ -91,32 +100,31 @@ header {
     max-width:100%;
     columns: 30rem;
     text-align:justify;
+    
 }
 
 #videoheading {
     text-align: center;
 }
 
-#myVideo {
-    width: 100%;
-    background-color:blanchedalmond;
-    border-color:black;
-    box-shadow:bisque 5pt 5pt 3pt;
-    position: relative;
+.videoWrapper {
+    position:relative;
+    padding-bottom:56.25%; 
+    /*
+        aspect ratio (height/width for %)
+        100% for 1:1
+        75% for 4:3
+        56.25% for 16:9     
+    */
 }
-
-#myVideo iframe {
-    top:0px;
-    left:0px;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 5%;
-    box-shadow:beige 3pt 3pt 3pt;
-    border-radius: 20px;
-    height:1000px;
-    width: 2440px;
-   
- }
+#iframe {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    
+}
 
 /* Contact Form */
 
@@ -174,22 +182,27 @@ header {
 
     @media screen and (min-width: 768px) {
 
-        #photogallery {
+        #photogallery figure {
             display:grid;
             grid-template-columns: 2fr 1fr;
+        }
+        .videoWrapper {
+            display:grid;
+            grid-template-columns: 2fr 1fr;
+            max-width: fit-content;
         }
 
-        #photogallery figcaption {
-            display:grid;
-            grid-template-columns: 2fr 1fr;
+        #iframe {
+           
         }
-        #myVideo {
-            display:grid;
-            grid-template-columns: 2fr 1fr;
-        }
+
     }
 
     @media screen and (min-width:1200px) {
+
+        #photogallery figure {
+            display:block;
+        }
 
         #photogallery {
             display:grid;
@@ -201,21 +214,13 @@ header {
         #photogallery h2 {
             grid-column:1/-1;
         }
-        #photogallery {
-            display:block;
-        }
         #myVideo {
-            display: grid;
-            grid-template-columns:1fr 1fr 1fr;
-
+            
         }
-        #myVideo iframe {
-            display:flex;
-
+        iframe {
+         
         }
     }
-
-
 
 
     
