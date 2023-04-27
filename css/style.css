@@ -1,6 +1,6 @@
 body {
     font-family:Roboto;
-    background-color: #9fc7fc;
+    background-color: black;
     color:#187452;
 }
 
@@ -22,7 +22,7 @@ header {
     color: rgb(24, 108, 80);
     border: 2px solid black;
     background-color: beige;
-    text-align:center;
+    text-align: center;
     padding:10px;
 }
 
@@ -31,9 +31,9 @@ header {
 }
 
 #hobbies {
-    color: darkseagreen;
+    color: whitesmoke;
     box-shadow: rgb(24, 108, 80);
-    box-shadow: 3pt;
+    box-shadow: 3pt solid;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -52,8 +52,13 @@ header {
     box-shadow: black;
     box-shadow: 1pt;
     text-align: center;
-    background-color: beige;
-    
+    background-image: url(/img/background_fire.gif);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 20pt;
+    color: green;
+    font-style: italic;
+    font-stretch: ultra-condensed;
+    text-shadow: 1px 1px 1px white, 2px 2px 1px whitesmoke;
 }
 
 #photogallery img {
@@ -74,6 +79,10 @@ header {
 */
 #bio {
     text-align:left;
+    background-image: url(/img/space-cloud.gif);
+    font-family: 'Instrument Serif', serif;
+    font-size: 20pt;
+    color: antiquewhite;
 }
 
 #hobbiestitle {
@@ -104,7 +113,8 @@ header {
 }
 
 #videoheading {
-    text-align: center;
+    text-align: left;
+    color: beige;
 }
 
 .videoWrapper {
@@ -123,6 +133,7 @@ header {
     left:0;
     width:100%;
     height:100%;
+    
     
 }
 
@@ -182,6 +193,16 @@ header {
 
     @media screen and (min-width: 768px) {
 
+        #photogallery {
+            font-size: 15pt;
+            color: greenyellow;
+            text-align: center;
+            box-shadow:  3px 10px firebrick, -1em 0 2em orangered;
+            font-stretch: ultra-condensed;
+            text-shadow: 1px 1px 1px white, 2px 2px 1px whitesmoke;
+        }
+
+
         #photogallery figure {
             display:grid;
             grid-template-columns: 2fr 1fr;
@@ -214,8 +235,8 @@ header {
         #photogallery h2 {
             grid-column:1/-1;
         }
-        #myVideo {
-            
+        #videoWrapper {
+          max-width: 675px;
         }
         iframe {
          
