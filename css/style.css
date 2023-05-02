@@ -24,6 +24,7 @@ header {
     background-color: beige;
     text-align: center;
     padding:10px;
+    text-shadow: 1px 1px 1px red;
 }
 
 #hero img {
@@ -37,8 +38,81 @@ header {
     display:flex;
     flex-direction:column;
     align-items:center;
+    background-image: url(/img/purple_clouds.gif);
 }
 
+#hobbiestitle {
+    color: yellow;
+    text-align: center;
+    padding:10px;
+    font-family:"Roboto Condensed", sans-serif;
+    font-size:30pt;
+    text-shadow: 3px 3px 1px purple, 3px 3px 1px blue;
+}
+
+#details1 {
+    cursor: pointer;
+}
+
+#details2 {
+    padding: 2px 6px;
+    width: 5em;
+    background-color: burlywood;
+    border: solid black;
+    box-shadow: 3px 3px 4px red;
+    cursor: pointer;
+    display:block;
+  }
+  
+#details2:hover {
+    background: linear-gradient(to right, #ef5350, #f48fb1, #7e57c2, #2196f3, #26c6da, #43a047, #eeff41, #f9a825, #ff5722);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+  #details2 > p {
+    border-radius: 0 0 20px 20px;
+    background-color: gold;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px orangered;
+    display: flex;
+    flex-direction: row;
+    
+  }
+  
+  #details2[open] > p {
+    background-color: green
+  }
+
+  #mark1:hover {
+    background: #ef5350;
+    box-shadow: 1px 1px 20px limegreen;
+    border: solid black;
+  }
+
+  .column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+  }
+  
+  
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
 
 #hobbies h2 {
 
@@ -83,14 +157,6 @@ header {
     font-family: 'Instrument Serif', serif;
     font-size: 20pt;
     color: antiquewhite;
-}
-
-#hobbiestitle {
-    color: firebrick;
-    text-align: center;
-    padding:10px;
-    font-family:"Roboto Condensed", sans-serif;
-    font-size:30pt;
 }
 
 #lit p:first-child::first-letter {
@@ -202,6 +268,11 @@ header {
             text-shadow: 1px 1px 1px white, 2px 2px 1px whitesmoke;
         }
 
+        #hobbiestitle {
+            box-shadow: 3px 3px 4px purple, 1px 1px 1px blue;
+        }
+
+
 
         #photogallery figure {
             display:grid;
@@ -225,6 +296,10 @@ header {
             display:block;
         }
 
+        #hobbiestitle {
+            box-shadow: 3px 3px 4px purple, 1px 1px 1px blue;
+        }
+
         #photogallery {
             display:grid;
             grid-template-columns:1fr 1fr 1fr;
@@ -243,6 +318,10 @@ header {
         }
     }
 
-
+    @media screen and (max-width: 500px) {
+        .column {
+          width: 100%;
+        }
+      }
     
 
